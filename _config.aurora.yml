@@ -1,0 +1,186 @@
+#! ---------------------------------------------------------------
+#! Aurora Theme for Hexo
+#! ---------------------------------------------------------------
+#! Designed & Coded By TriDiamond
+#! ---------------------------------------------------------------
+
+#! ---------------------------------------------------------------
+#! Site Configs
+#！ @docs https://aurora.tridiamond.tech/guide/configuration.html
+#! ---------------------------------------------------------------
+site:
+  subtitle: Khaos's Blog
+  author: 程序员khaos
+  nick: cxykhaos
+  description: '不要站在原地去问意义。 <br /> @ <b>公众号：程序员khaos</b>'
+  link: '/'
+  language: cn
+  multi_language: true
+  logo: /static/img/labtocat.png
+  avatar: /static/img/labtocat.png
+  beian:
+    number: ''
+    link: ''
+  police_beian:
+    number: ''
+    link: ''
+
+#! ---------------------------------------------------------------
+#! Authors Configs
+#！ @docs https://aurora.tridiamond.tech/guide/authors.html
+#! ---------------------------------------------------------------
+authors:
+  ##! example
+  # TriDiamond:
+  #   name: TriDiamond
+  #   avatar: https://up.enterdesk.com/edpic_source/44/ff/3d/44ff3d6bd2819d524facfcc33205d4cd.jpg
+  #   link: https://github.com/TriDiamond
+  #   description: 'Think like an artist, code like an artisan.'
+  #   socials:
+  #     github: https://tridiamond.tech
+
+#! ---------------------------------------------------------------
+#! Menu Configs
+#！ @docs https://aurora.tridiamond.tech/guide/menu.html
+#! ---------------------------------------------------------------
+menu:
+  About: true
+  Tags: true
+  Archives: true
+  projects:
+    name: '我的'
+    children:
+      obsidian:
+        name: '导航站'
+        path: 'http://khaos.net.cn/'
+      Aurora:
+        name: '加入QQ群'
+        path: 'https://jq.qq.com/?_wv=1027&k=qawkEbAE'
+#! ---------------------------------------------------------------
+#! Theme Config
+#! @docs https://aurora.tridiamond.tech/guide/theme.html
+#! ---------------------------------------------------------------
+theme:
+  dark_mode: true
+  profile_shape: diamond # support `circle`, `diamond`, `rounded`
+  feature: false
+  gradient:
+    color_1: '#24c6dc'
+    color_2: '#5433ff'
+    color_3: '#ff0099'
+
+#! ---------------------------------------------------------------
+#! Social Configs
+#! @docs https://aurora.tridiamond.tech/guide/social.html
+#! ---------------------------------------------------------------
+socials:
+  github: 'https://github.com/Urmkhaos'
+  twitter: ''
+  stackoverflow: ''
+  weibo: 'https://weibo.com/u/2675003991'
+  csdn: 'https://blog.csdn.net/A_Khaos'
+  # zhihu: 'https://www.zhihu.com/people/tridiamond'
+  # customs:
+  #   bilibili:
+  #    icon: http://localhost:4000/svg/bilibili.svg
+  #    link: https://live.bilibili.com/22619211
+  # baidu:
+  #    icon: iconfont icon-baidu
+  #    link: https://live.bilibili.com/22619211
+  #  book:
+  #    icon: far fa-address-book
+  #    link: https://live.bilibili.com/22619211
+
+#! ---------------------------------------------------------------
+#! Site Meta Configs
+#! @docs https://aurora.tridiamond.tech/guide/theme.html
+#! ---------------------------------------------------------------
+site_meta:
+  cdn: cn
+  favicon:
+  description: '一位正在重塑知识的技术人 公众号：程序员khaos'
+  keywords: ''
+  author: '程序员khaos'
+
+#! ---------------------------------------------------------------
+#! Plugins
+#! @docs https://aurora.tridiamond.tech/guide/plugins.html
+#! ---------------------------------------------------------------
+
+# For local development only!
+gitalk:
+  enable: true
+  autoExpand: true
+  clientID: '7213c35a4eb31123c086'
+  clientSecret: '6bda27e359499e24d4152854ddc87f0598cf104a'
+  repo: 'blog-comments'
+  owner: 'Knight47'
+  admin: ['Knight47']
+  id: uid
+  language: cn
+  distractionFreeMode: true
+  recentComment: true
+  proxy: ''
+
+# Valine comment plugin (recommended!)
+# see https://valine.js.org/quickstart.html
+valine:
+  enable: false
+  app_id:
+  app_key:
+  avatar: ''
+  placeholder: Leave your thoughts behind~
+  visitor: true
+  lang: cn
+  avatarForce: false
+  meta: ['nick', 'mail']
+  requiredFields: []
+  admin: 'TriDiamond'
+  recentComment: true
+
+# Enable Busuanzi statistic plugin
+# see http://ibruce.info/2015/04/04/busuanzi/
+busuanzi:
+  enable: true
+
+copy_protection:
+  enable: true
+  author:
+    cn: 作者
+    en: Author
+  link:
+    cn: 本文来自于
+    en: Article is from
+  license:
+    cn: 博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议
+    en: This content is shared under the CC BY-NC-SA 4.0 protocol (Non-Commercial)
+
+#! ---------------------------------------------------------------
+#! Enable Aurora Bot Dia
+#! @docs https://aurora.tridiamond.tech/guide/site-meta.html#custom-meta
+#! ---------------------------------------------------------------
+# 开启 Aurora 机器人 Dia
+aurora_bot:
+  # ======================================================
+  # 设置为 true，你可爱的机器人就会启动。
+  # ======================================================
+  enable: true
+  # ======================================================
+  # 该机器人支持两种语言
+  # -- en: 英语
+  # -- cn: 中文
+  # ======================================================
+  locale: cn
+  # ======================================================
+  # 目前只支持使用 Dia，将来会支持 live2d。
+  # ======================================================
+  bot_type: dia
+
+
+#! ---------------------------------------------------------------
+#! Injections
+#! @docs https://aurora.tridiamond.tech/guide/site-meta.html#custom-meta
+#! ---------------------------------------------------------------
+injects:
+  scripts:
+  css:
